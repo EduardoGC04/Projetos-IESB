@@ -1,0 +1,34 @@
+.drop{
+position: relative;
+display: inline-block;
+}
+.drop2{
+position: relative;
+display: inline-block;
+}
+.dropctn{
+display: none;
+position: absolute;
+min-width: 100%;
+z-index: 1;
+overflow: auto;
+}
+.dropctn2{
+display: none;
+position: absolute;
+min-width: 100%;
+z-index: 1;
+overflow: auto;
+}
+.dropctn2 a{
+    display: block;
+}
+.dropctn a{
+    display: block;
+}
+.drop:hover .dropctn{
+    display: block;
+}
+.show{
+    display: block;
+}

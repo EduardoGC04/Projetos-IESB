@@ -12,14 +12,28 @@
             <ul>
                 <li><a href="/formularios.html">Página de formulários</a></li>
                 <li><a href="#">Página futura</a></li>
-                <!-- Dropdown -->
+                <!-- Dropdown Hover -->
                  <div class="drop">
                     <li> <button class="dropbtn">Páginas</button>
                         <div class="dropctn">
                             <ul>
                                 <li><a href="/menu.html">Menu</a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
+                                <li><a href="#">link 1</a></li>
+                                <li><a href="#">link 2</a></li>
+                            </ul>
+                        </div>    
+                    </li>
+                </div>
+            </ul>
+            <ul>
+                                 <!-- Dropdown On-Click -->
+                 <div class="drop2">
+                    <li> <button onclick="myFunction()" class="dropbtn">Páginas 2</button>
+                        <div id="dp2" class="dropctn2">
+                            <ul>
+                                <li><a href="#">Link 3</a></li>
+                                <li><a href="#">link 1</a></li>
+                                <li><a href="#">link 2</a></li>
                             </ul>
                         </div>    
                     </li>
@@ -27,5 +41,10 @@
             </ul>
         </nav>
     </div>
+    <script>
+        function myFunction(){
+            document.getElementbyId("dp2").classList.toggle("show");
+        }
+    </script>
 </body>
 </html>
