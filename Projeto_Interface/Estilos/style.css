@@ -1,0 +1,157 @@
+/* Fonte de texto */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Elementos gerais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/Imagens/universo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Montserrat";
+    line-height: 1.6;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    display:flex;
+    align-items: center;
+}
+
+/* Elementos do cabeçalho */
+header{
+    color: aliceblue;
+    background-color: black;
+    padding: 40px;
+    width: 100%;
+}
+header ul li{
+    list-style: none;
+}
+/* Elementos do cormo principal */
+main{
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 40px;
+}
+.meio{
+background: rgba(0, 0, 0, 0.7);
+backdrop-filter: blur(2px);
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 20px;
+color: white; 
+width: 100%;
+}
+
+.meio ul ol li{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.meio h1 h2{
+    text-align: center;
+}
+
+/* Elementos do rodapé */
+footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    padding: 30px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* Menu dropdown */
+.drop{
+    display: flex;
+    justify-content: flex-end;
+    bottom: 50px;
+    position: relative;
+}
+.ctn{
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition:0.4s ease;
+        background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+}
+.ctn a{
+    text-decoration: none;
+    color: #707070;
+    padding: 12px 20px;
+}
+.drop:hover .ctn{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.drop:hover .dropb{
+    transition:0.7s ease;
+    transform: rotate(180deg)
+}
+.dropb{
+    transition:0.7s ease;
+    border: none;
+    background-color: black;
+}
+.dropb span{
+    color: white;
+}
+
+
+/* Estilização do Rodapé */
+.fctn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social a {
+    color: #aaa;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #fff;
+}
+
+/* Estilização página 2*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.ent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.ent-img img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+}
+.ent-txt {
+    flex: 1;
+}
+.ent-txt h3{
+    color: #00d4ff;
+    margin-bottom: 15px;
+}
+.ent:nth-child(even) {
+    flex-direction: row-reverse;
+}
